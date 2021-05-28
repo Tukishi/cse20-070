@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO BALI | EXPLORE WITH US</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="indonesiaflag.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about_bali.html">ABOUT BALI</a></li>                               
+                    <li><a href="lifestyle.html">LIFESTLYE</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="connect_with_us.html">CONNECT WITH US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONNECT WITH US</h1>
+    </section>
+    
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252573.5898405386!2d114.931255748426!3d-8.454338500431565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sen!2sbw!4v1617642898244!5m2!1sen!2sbw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>    
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Plot No. 61648/A21. Goalestown Estate, Maruapula</h5>
+                        <p>Gaborone, Botswana, South_East</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+267 75 764 779 / +267 71 866 038</h5>
+                        <p>Open All Day, Everyday</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>cse20-070@thuto.bac.ac.bw</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, modi error iusto explicabo quia ipsa magnam, hic non rerum. Iure consequuntur molestias, cum. Labore distinctio molestiae accusantium facere, <br>eveniet, illum quae aspernatur impedit doloremque, est maxime quidem nulla. Optio sit quis consequatur consectetur sint tempora.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Tukishi Keletso Calistus</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
